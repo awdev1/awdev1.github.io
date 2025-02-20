@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const content = document.getElementById('content');
 
     const commands = [
-        { immediate: 'awdevsoftware.org@125.123.32.23:~$ ', type: 'node webserver.js\n\n' },
+        { immediate: 'awdevsoftware.org@157.230.50.159:~$ ', type: 'node webserver.js\n\n' },
         ' * Serving ExpressJS app "web portfolio"\n',
-        ' * Running on http://0.0.0.0:3000/ (Press CTRL+C to quit)\n',
+        ' * Running on http://0.0.0.0:1567/ (Press CTRL+C to quit)\n',
         ' * Cloudflared: Port Forwarding to the interwebz from\n',
-        ' * https://0.0.0.0:3000 <--> https://awdevsoftware.org\n',
+        ' * https://0.0.0.0:1567 <--> https://awdevsoftware.org\n',
         '.........\n\n',
         'Done!'
     ];
