@@ -1,6 +1,6 @@
 
 document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
         document.getElementById(targetId).scrollIntoView({
@@ -8,7 +8,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
 
@@ -24,9 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { immediate: 'awdevsoftware.org@157.230.50.159:~$ ', type: 'node webserver.js\n\n' },
         ' * Serving ExpressJS app "web portfolio"\n',
         ' * Running on http://0.0.0.0:1567/ (Press CTRL+C to quit)\n',
-        ' * Cloudflared: Port Forwarding to the interwebz from\n',
-        ' * https://0.0.0.0:1567 <--> https://awdevsoftware.org\n',
-        '.........\n\n',
+        ' * Cloudflared: Port Forwarding to the interwebz from https://0.0.0.0:1567 <--> https://awdevsoftware.org\n',
+        '.........\n',
         'Done!'
     ];
 
@@ -75,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const { immediate, type } = commands[commandIndex];
 
                 const promptSpan = document.createElement('span');
-                promptSpan.style.display = "inline"; 
+                promptSpan.style.display = "inline";
                 promptSpan.textContent = immediate;
                 consoleOutput.insertBefore(promptSpan, cursor);
 
@@ -106,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     typeNextCommand();
 });
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll(".fade-in");
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
